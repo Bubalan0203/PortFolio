@@ -1,0 +1,136 @@
+/* Home.css */
+
+/* Opening Animation Styles */
+.container {
+  background: #f0f0f0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+
+
+/* Home Content Styles */
+.home {
+  display: none; /* Initially hide the content */
+}
+
+/* Add fadeIn animation keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.home.fadeIn {
+  animation: fadeIn 2s ease; /* Add a fadeIn animation to the home content */
+}
+
+/* Main Content Styles */
+
+.home {
+  width: 100%;
+  align-items: center;
+  font-family: "Arial", sans-serif;
+  color: #ffffff;
+  background-color: #000000; /* Black background */
+}
+
+.about {
+  width: 100%;
+  height: calc(100vh - 100px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #000000;
+  color: #ff0606;
+  animation: fadeIn 2s ease; /* Add a fadeIn animation */
+}
+
+.about h2 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 80px;
+  color: #ee0404; /* Pink color */
+  height: 50px;
+}
+
+.about .prompt {
+  width: 40%;
+  font-size: 30px;
+}
+
+.prompt svg {
+  font-size: 60px;
+  margin: 5px;
+  color: #ffffff; /* White color */
+}
+
+/* Additional styling for 'about' class */
+.about h3 {
+  font-size: 24px;
+  color: #ffffff; /* White color */
+}
+
+.about h3 span {
+  color: #ff0000; /* Red color */
+}
+
+/* Skills section */
+.skills {
+  font-size: 35px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills h1 {
+  color: #ff0000;
+}
+
+.skills h2 {
+  color: #ffffff;
+}
+
+.skills .list {
+  list-style: none;
+  width: 60%;
+}
+
+.list span {
+  font-size: 20px;
+  color: #ff0000; /* White color */
+}
+
+@media only screen and (max-width: 600px) {
+  .about h2 {
+    font-size: 40px;
+  }
+
+  .about .prompt {
+    margin-top: 10px;
+    font-size: 20px;
+    width: 80%;
+  }
+
+  .skills {
+    text-align: center;
+  }
+
+  .list {
+    padding: 0;
+  }
+
+  .skills h2 {
+    font-size: 30px;
+  }
+}

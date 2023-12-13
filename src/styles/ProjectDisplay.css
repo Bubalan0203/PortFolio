@@ -1,0 +1,68 @@
+/* project.css */
+
+.project {
+  width: 100%;
+  height: calc(100vh - 100px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #000000; /* Black background */
+  color: #ffffff; /* White text */
+  animation: fadeIn 2s ease; /* Add a fadeIn animation */
+}
+
+.project h1 {
+  margin-top: 50px;
+  color: #fff6fb; /* Pink color */
+  font-size: 35px;
+}
+
+.project img {
+  width: 700px;
+  border-radius: 10px;
+}
+
+.project p {
+  font-size: 40px;
+  color: #f80000; /* White color for text on black background */
+}
+
+.project svg {
+  font-size: 60px;
+  color: #eeeeee; /* Pink color for text on black background */
+}
+
+.project ul {
+  font-size: 20px;
+  color: #ffffff; /* White color for list items on black background */
+}
+
+/* GitHub icon color */
+.project a {
+  color: #ffffff; /* White color */
+}
+
+.project a:hover {
+  color: #ff0000; /* Red color on hover */
+}
+
+/* Tech Stack color */
+.project .tech-stack {
+  color: #ffeeee; /* Red color */
+}
+
+/* Generated project.skills color */
+.project .project-skills {
+  color: #ffffff; /* White color */
+}
+
+/* Add fadeIn animation keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
